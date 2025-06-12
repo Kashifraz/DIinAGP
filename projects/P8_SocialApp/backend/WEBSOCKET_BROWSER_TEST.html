@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Notification Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.6.1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+</head>
+<body>
+    <h1>WebSocket Notification Test</h1>
+    <div>
+        <label>JWT Token:</label><br>
+        <input type="text" id="token" style="width: 500px;" placeholder="Enter your JWT token"><br><br>
+        <label>User ID:</label><br>
+        <input type="number" id="userId" placeholder="Enter your user ID" value="1"><br><br>
+        <button onclick="connect()">Connect</button>
+        <button onclick="disconnect()">Disconnect</button>
+    </div>
+    <div id="status" style="margin-top: 20px;"></div>
+    <div id="notifications" style="margin-top: 20px;"></div>
+
+    <script>
+        let stompClient = null;
+
+        function connect() {
+            const token = document.getElementById('token').value;
+            const userId = document.getElementById('userId').value;
+
+            if (!token || !userId) {
+                alert('Please enter token and user ID');
+                return;
+            }
+
+            const socket = new SockJS('http://localhost:8080/ws');
+            stompClient = new StompJs.Client({
+                webSocketFactory: () => socket,
+                connectHeaders: {
+                    Authorization: 'Bearer ' + token
+                },
+                debug: function(str) {
+                    console.log(str);
+                },
+                reconnectDelay: 5000,
+                heartbeatIncoming: 4000,
+                heartbeatOutgoing: 4000,
+            });
+
+            stompClient.onConnect = function(frame) {
+                updateStatus('Connected!', 'green');
+                
+                // Subscribe to user's notification channel
+                stompClient.subscribe('/topic/user/' + userId, function(notification) {
+                    const data = JSON.parse(notification.body);
+                    console.log('Notification received:', data);
+                    addNotification(data);
+                });
+            };
+
+            stompClient.onStompError = function(frame) {
+                updateStatus('STOMP Error: ' + frame.headers['message'], 'red');
+                console.error('STOMP error:', frame);
+            };
+
+            stompClient.onWebSocketClose = function(event) {
+                updateStatus('Disconnected', 'red');
+                console.log('WebSocket closed:', event);
+            };
+
+            stompClient.activate();
+        }
+
+        function disconnect() {
+            if (stompClient !== null) {
+                stompClient.deactivate();
+                updateStatus('Disconnected', 'red');
+            }
+        }
+
+        function updateStatus(message, color) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = '<p style="color: ' + color + ';">' + message + '</p>';
+        }
+
+        function addNotification(notification) {
+            const notificationsDiv = document.getElementById('notifications');
+            const notificationDiv = document.createElement('div');
+            notificationDiv.style.border = '1px solid #ccc';
+            notificationDiv.style.padding = '10px';
+            notificationDiv.style.margin = '10px 0';
+            notificationDiv.innerHTML = `
+                <strong>Type:</strong> ${notification.type}<br>
+                <strong>Message:</strong> ${notification.message}<br>
+                <strong>Post ID:</strong> ${notification.postId || 'N/A'}<br>
+                <strong>Actor:</strong> ${notification.actor.fullName} (${notification.actor.email})<br>
+                <strong>Time:</strong> ${notification.timestamp}
+            `;
+            notificationsDiv.insertBefore(notificationDiv, notificationsDiv.firstChild);
+        }
+    </script>
+</body>
+</html>
+

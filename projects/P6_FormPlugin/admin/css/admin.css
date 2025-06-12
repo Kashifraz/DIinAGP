@@ -1,0 +1,1736 @@
+/**
+ * Admin styles for Form Plugin
+ *
+ * @package Form_Plugin
+ * @since 1.0.1
+ * @updated 2024-01-15 - Major redesign with custom modal and radio/checkbox system
+ */
+
+/* DEBUG: Cache busting test - if you see this, CSS is loading */
+/* Removed debug styling - cache busting is working */
+
+/* Form Builder Styles */
+.form-builder-container {
+    margin-top: 20px;
+}
+
+/* Form Metadata Section - Full Width */
+.form-metadata-section {
+    margin-bottom: 25px;
+}
+
+.metadata-section {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.metadata-content {
+    padding: 16px;
+}
+
+.metadata-section .form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.metadata-section .form-label i {
+    margin-right: 6px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Form Builder Main Section */
+.form-builder-main {
+    margin-bottom: 25px;
+}
+
+/* Section Headers */
+.section-header {
+    background: #f8f9fa;
+    border: 1px solid #d1d5db;
+    border-bottom: none;
+    padding: 12px 16px;
+    border-radius: 6px 6px 0 0;
+}
+
+.section-header h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+}
+
+.section-header h4 i {
+    margin-right: 8px;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Form Fields Section */
+.form-fields-section {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* Field Palette Section */
+.field-palette-section {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* Form Fields Container */
+.form-fields-container {
+    min-height: 400px;
+    border: 2px dashed #d1d5db;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+    position: relative;
+    background: #fafbfc;
+    transition: all 0.3s ease;
+}
+
+.form-fields-container .empty-form-message {
+    text-align: center;
+    color: #6b7280;
+    font-style: italic;
+    padding: 40px 20px;
+}
+
+.form-fields-container .empty-form-message p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.form-fields-container.drag-over {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.empty-form-message {
+    text-align: center;
+    color: #6b7280;
+    padding: 60px 20px;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.empty-state i {
+    font-size: 48px;
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+.empty-state h5 {
+    color: #374151;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.empty-state p {
+    color: #6b7280;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Field Palette */
+.field-palette {
+    padding: 16px;
+}
+
+.field-category {
+    margin-bottom: 20px;
+}
+
+.field-category:last-child {
+    margin-bottom: 0;
+}
+
+.field-category h6 {
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d1d5db;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.field-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    cursor: move;
+    transition: all 0.2s ease;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.field-item:hover,
+.field-item-hover {
+    background: #f9fafb;
+    border-color: #3b82f6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.field-item i {
+    margin-right: 8px;
+    color: #6b7280;
+    font-size: 16px;
+    width: 18px;
+    text-align: center;
+}
+
+.field-item span {
+    font-weight: 500;
+    color: #374151;
+    font-size: 14px;
+}
+
+/* Form Preview Section - Full Width */
+.form-preview-section {
+    margin-bottom: 25px;
+}
+
+.preview-section {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.preview-container {
+    background: #fafbfc;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.preview-empty {
+    text-align: center;
+    color: #6b7280;
+    padding: 40px 20px;
+}
+
+.preview-empty i {
+    font-size: 32px;
+    color: #d1d5db;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.preview-empty p {
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Form Field Styling */
+.form-field {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: move;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.form-field:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+.form-field .field-controls {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
+    background: rgba(255,255,255,0.95);
+    border-radius: 4px;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #d1d5db;
+}
+
+.form-field:hover .field-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.field-controls button {
+    background: none;
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+    color: #6b7280;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    font-size: 12px;
+}
+
+.field-controls button:hover {
+    color: #3b82f6;
+    background: #f3f4f6;
+}
+
+.field-controls .configure-field:hover {
+    color: #10b981;
+}
+
+.field-controls .remove-field:hover {
+    color: #ef4444;
+}
+
+/* Form Field Content */
+.form-field label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-field .required {
+    color: #dc3545;
+    margin-left: 3px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.1);
+}
+
+.form-field .form-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* Radio and Checkbox Groups */
+.form-field .form-check {
+    margin-bottom: 8px;
+}
+
+.form-field .form-check:last-child {
+    margin-bottom: 0;
+}
+
+.form-field .form-check-input {
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.form-field .form-check-label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Legacy radio/checkbox styles removed - using custom system instead */
+
+.form-preview {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.preview-container {
+    font-size: 14px;
+}
+
+.preview-container .form-group {
+    margin-bottom: 15px;
+}
+
+.preview-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.preview-container input,
+.preview-container textarea,
+.preview-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Status indicators */
+.status-active {
+    color: #46b450;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #dc3232;
+    font-weight: 600;
+}
+
+.status-new {
+    color: #0073aa;
+    font-weight: 600;
+}
+
+.status-read {
+    color: #666;
+    font-weight: 600;
+}
+
+.status-archived {
+    color: #999;
+    font-weight: 600;
+}
+
+/* Submission preview */
+.submission-preview {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more-fields {
+    color: #666;
+    font-style: italic;
+}
+
+/* Modal styles */
+.modal-header {
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Form Builder Actions */
+.form-builder-actions {
+    background: #f8f9fa;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-builder-actions .button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.form-builder-actions .button-primary {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 1px 2px rgba(59, 130, 246, 0.3);
+}
+
+.form-builder-actions .button-primary:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.4);
+}
+
+.form-builder-actions .button:not(.button-primary) {
+    background: white;
+    color: #6b7280;
+    border: 1px solid #d1d5db;
+}
+
+.form-builder-actions .button:not(.button-primary):hover {
+    background: #f9fafb;
+    border-color: #3b82f6;
+    color: #3b82f6;
+    transform: translateY(-1px);
+}
+
+/* Copy Shortcode Button */
+.copy-shortcode {
+    background: #28a745 !important;
+    color: white !important;
+    border: none !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.copy-shortcode:hover {
+    background: #218838 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3) !important;
+}
+
+.copy-shortcode.copied {
+    background: #20c997 !important;
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Input Group Styling */
+.input-group {
+    display: flex;
+    width: 100%;
+}
+
+.input-group .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.input-group .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid #28a745;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Card Enhancements */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Sortable Placeholder */
+.sortable-placeholder {
+    background: #f0f8ff;
+    border: 2px dashed #0073aa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 60px;
+    opacity: 0.7;
+}
+
+/* Drag Helper */
+.ui-draggable-helper {
+    transform: rotate(5deg);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .form-builder-main .row {
+        flex-direction: column;
+    }
+    
+    .form-builder-main .col-lg-8,
+    .form-builder-main .col-lg-4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-metadata-section .card-body {
+        padding: 16px;
+    }
+    
+    .form-metadata-section .row {
+        flex-direction: column;
+    }
+    
+    .form-metadata-section .col-md-4 {
+        margin-bottom: 16px;
+    }
+    
+    .form-builder-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    
+    .form-builder-actions .button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .field-palette {
+        padding: 12px;
+    }
+    
+    .field-category {
+        margin-bottom: 16px;
+    }
+    
+    .form-fields-container {
+        min-height: 300px;
+        padding: 16px;
+    }
+    
+    .preview-container {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-metadata-section .card-body {
+        padding: 12px;
+    }
+    
+    .form-fields-container {
+        padding: 12px;
+    }
+    
+    .form-field {
+        padding: 12px;
+    }
+    
+    .field-item {
+        padding: 8px 10px;
+    }
+    
+    .form-builder-actions {
+        padding: 12px 16px;
+    }
+    
+    .section-header {
+        padding: 10px 12px;
+    }
+    
+    .field-palette {
+        padding: 12px;
+    }
+}
+
+/* Forms List Styles */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.empty-state-content i {
+    font-size: 48px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.empty-state-content h3 {
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.empty-state-content p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.forms-list-container {
+    margin-top: 20px;
+}
+
+.forms-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.form-card {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.form-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.form-card.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.form-card.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #3b82f6;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-card-header {
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-title h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-title h3 a {
+    color: #374151;
+    text-decoration: none;
+}
+
+.form-title h3 a:hover {
+    color: #3b82f6;
+}
+
+.form-status {
+    margin-top: 5px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.status-active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.status-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.form-actions {
+    position: relative;
+}
+
+.form-dropdown-toggle {
+    background: none !important;
+    border: none !important;
+    padding: 5px;
+    border-radius: 4px;
+    color: #6b7280;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-dropdown-toggle::after {
+    display: none !important;
+}
+
+.form-dropdown-toggle:hover {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.form-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 160px;
+    z-index: 1000;
+    display: none;
+}
+
+.form-dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: #374151;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.dropdown-item i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
+.dropdown-item.text-danger {
+    color: #dc2626;
+}
+
+.dropdown-item.text-danger:hover {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.dropdown-divider {
+    margin: 4px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.form-card-body {
+    padding: 0 20px 15px;
+}
+
+.form-description {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.form-shortcode {
+    margin-top: 15px;
+}
+
+.form-shortcode label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+.shortcode-input-group {
+    display: flex;
+    gap: 5px;
+}
+
+.shortcode-input {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #f9fafb;
+    color: #6b7280;
+}
+
+.copy-shortcode {
+    padding: 6px 8px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.copy-shortcode:hover {
+    background: #2563eb;
+}
+
+.copy-shortcode.copied {
+    background: #10b981;
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.form-card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #f3f4f6;
+    background: #f9fafb;
+    border-radius: 0 0 8px 8px;
+}
+
+.form-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.form-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-submissions {
+    color: #3b82f6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.view-submissions:hover {
+    color: #2563eb;
+}
+
+/* Responsive Design for Forms List */
+@media (max-width: 768px) {
+    .forms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .forms-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .form-actions {
+        align-self: flex-end;
+    }
+    
+    .form-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button styles */
+.button.copy-shortcode {
+    margin-left: 10px;
+}
+
+/* Table improvements */
+.wp-list-table .column-shortcode {
+    width: 200px;
+}
+
+.wp-list-table .column-status {
+    width: 100px;
+}
+
+.wp-list-table .column-submissions {
+    width: 120px;
+}
+
+.wp-list-table .column-date {
+    width: 120px;
+}
+
+/* Field configuration styles */
+.field-config-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.field-config-section:last-child {
+    border-bottom: none;
+}
+
+.field-config-section h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.field-options {
+    margin-top: 10px;
+}
+
+.field-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.field-option input {
+    margin-right: 8px;
+}
+
+.field-option button {
+    margin-left: 8px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* ===========================================
+   FIELD CONFIGURATION MODAL - SIMPLE DESIGN
+   =========================================== */
+
+/* Modal Container */
+#field-config-modal {
+    z-index: 9999;
+}
+
+#field-config-modal .modal-dialog {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Simple Modal Content */
+.custom-modal-content {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+/* Simple Modal Header */
+.custom-modal-header {
+    background: #f8f9fa;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+}
+
+.custom-modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-modal-title i {
+    font-size: 18px;
+    color: #666;
+}
+
+.custom-close-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-close-btn:hover {
+    color: #333;
+}
+
+/* Simple Modal Body */
+.custom-modal-body {
+    padding: 20px;
+    background: white;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Simple Modal Footer */
+.custom-modal-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* Simple Buttons */
+.custom-btn-primary,
+.custom-btn-secondary {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.custom-btn-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: white;
+}
+
+.custom-btn-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+    color: white;
+}
+
+.custom-btn-secondary {
+    background: white;
+    border-color: #ccc;
+    color: #333;
+}
+
+.custom-btn-secondary:hover {
+    background: #f5f5f5;
+    border-color: #999;
+    color: #333;
+}
+
+/* ===========================================
+   FIELD CONFIGURATION FORM - SIMPLE DESIGN
+   =========================================== */
+
+.field-config-form {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Simple Form Sections */
+.field-config-section {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.field-config-section:last-child {
+    margin-bottom: 0;
+}
+
+.field-config-section h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Simple Form Labels */
+.field-config-form .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Simple Form Controls */
+.field-config-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background: white;
+}
+
+.field-config-form .form-control:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+    outline: none;
+}
+
+/* Simple Checkbox and Radio Inputs */
+.field-config-form .form-check-input {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    margin-right: 8px;
+}
+
+.field-config-form .form-check-label {
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Simple Options Container */
+.options-container {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.option-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-item:last-child {
+    margin-bottom: 0;
+}
+
+.option-item .form-control {
+    flex: 1;
+    margin: 0;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.option-item .form-control:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+}
+
+.option-item .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Add Option Button */
+#add-dropdown-option, #add-radio-option, #add-checkbox-option {
+    background: #28a745;
+    border: 1px solid #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#add-dropdown-option:hover, #add-radio-option:hover, #add-checkbox-option:hover {
+    background: #218838;
+    border-color: #218838;
+    color: white;
+}
+
+/* ===========================================
+   CUSTOM RADIO & CHECKBOX SYSTEM - COMPLETE REDESIGN
+   =========================================== */
+
+/* Custom Radio Container */
+.custom-radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.custom-radio-container.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Custom Radio Option */
+.custom-radio-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+    position: relative;
+    width: fit-content;
+    min-width: 120px;
+}
+
+.custom-radio-option:hover .custom-radio-mark {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+}
+
+/* Hide default radio input */
+.custom-radio-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom radio mark */
+.custom-radio-mark {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #8c8f94;
+    border-radius: 50%;
+    margin-right: 12px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Radio mark when checked */
+.custom-radio-input:checked ~ .custom-radio-mark {
+    background-color: #0073aa;
+    border-color: #0073aa;
+}
+
+.custom-radio-input:checked ~ .custom-radio-mark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom radio label */
+.custom-radio-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+/* Custom Checkbox Container */
+.custom-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.custom-checkbox-container.horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Custom Checkbox Option */
+.custom-checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+    position: relative;
+    width: fit-content;
+    min-width: 120px;
+}
+
+.custom-checkbox-option:hover .custom-checkbox-mark {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.1);
+}
+
+/* Hide default checkbox input */
+.custom-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom checkbox mark */
+.custom-checkbox-mark {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 2px solid #8c8f94;
+    border-radius: 3px;
+    margin-right: 12px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Checkbox mark when checked */
+.custom-checkbox-input:checked ~ .custom-checkbox-mark {
+    background-color: #0073aa;
+    border-color: #0073aa;
+}
+
+.custom-checkbox-input:checked ~ .custom-checkbox-mark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Custom checkbox label */
+.custom-checkbox-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+/* Focus states */
+.custom-radio-input:focus ~ .custom-radio-mark,
+.custom-checkbox-input:focus ~ .custom-checkbox-mark {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.1);
+}
+
+/* Disabled states */
+.custom-radio-input:disabled ~ .custom-radio-mark,
+.custom-checkbox-input:disabled ~ .custom-checkbox-mark {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.custom-radio-input:disabled ~ .custom-radio-label,
+.custom-checkbox-input:disabled ~ .custom-checkbox-label {
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Fallback for when Bootstrap modal is not available */
+#field-config-modal.show-fallback {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    width: 700px;
+    z-index: 9999;
+}
+
+/* Template Selection Section */
+.template-selection-section {
+    margin-bottom: 2rem;
+}
+
+.template-section {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.template-content {
+    padding: 1.5rem;
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.template-card {
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    position: relative;
+}
+
+.template-card:hover {
+    border-color: #0073aa;
+    box-shadow: 0 4px 8px rgba(0, 115, 170, 0.1);
+}
+
+.template-card.selected {
+    border-color: #0073aa;
+    background: #f0f8ff;
+}
+
+.template-card.selected::after {
+    content: '✓';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #0073aa;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.template-preview {
+    width: 100%;
+    height: 120px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.template-preview.classic {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.template-preview.modern {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+}
+
+.template-preview.minimal {
+    background: #ffffff;
+    border: 2px solid #000;
+}
+
+.template-preview.professional {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.template-preview::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 8px;
+    background: #0073aa;
+    border-radius: 4px;
+}
+
+.template-preview::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    right: 20px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+}
+
+.template-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.template-description {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.template-customization {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.template-customization h5 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.color-controls .form-group {
+    margin-bottom: 1rem;
+}
+
+.color-controls label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.color-picker {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-picker::-webkit-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+#apply-template {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+#apply-template:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

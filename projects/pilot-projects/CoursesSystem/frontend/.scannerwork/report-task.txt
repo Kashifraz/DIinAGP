@@ -1,0 +1,6 @@
+projectKey=course-app-frontend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=course-app-frontend
+ceTaskId=e2bd5dc3-9a82-4467-bf16-66d3846fecfb
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e2bd5dc3-9a82-4467-bf16-66d3846fecfb

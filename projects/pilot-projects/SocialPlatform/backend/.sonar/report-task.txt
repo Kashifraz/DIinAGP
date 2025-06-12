@@ -1,0 +1,6 @@
+projectKey=social-app-backend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=social-app-backend
+ceTaskId=41186b8e-feaf-4348-8fca-d855fbaf5bc8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=41186b8e-feaf-4348-8fca-d855fbaf5bc8

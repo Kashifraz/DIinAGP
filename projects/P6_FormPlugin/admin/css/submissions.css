@@ -1,0 +1,534 @@
+/**
+ * Enhanced Submissions Page Styles
+ *
+ * @package Form_Plugin
+ * @since 1.0.0
+ */
+
+/* Search Form Container */
+.submissions-search-container {
+    width: 100%;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.submissions-search-form {
+    width: 100%;
+}
+
+.search-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: end;
+    width: 100%;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    flex: 1;
+}
+
+.search-field-wide {
+    flex: 2;
+    min-width: 250px;
+}
+
+.search-field label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.search-field select,
+.search-field input[type="text"],
+.search-field input[type="date"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-field select:focus,
+.search-field input[type="text"]:focus,
+.search-field input[type="date"]:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.25);
+}
+
+.search-actions {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    margin-left: auto;
+}
+
+.btn-search,
+.btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-search {
+    background-color: #007cba;
+    color: #fff;
+}
+
+.btn-search:hover {
+    background-color: #005a87;
+    color: #fff;
+}
+
+.btn-clear {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-clear:hover {
+    background-color: #545b62;
+    color: #fff;
+}
+
+.btn-export {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    white-space: nowrap;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-export:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+.btn-export:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Bulk Actions */
+.bulk-actions {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bulk-actions.show {
+    display: flex;
+}
+
+.bulk-actions-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bulk-actions select {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+.bulk-actions select:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.25);
+}
+
+.bulk-actions button {
+    padding: 8px 16px;
+    background-color: #007cba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.bulk-actions button:hover {
+    background-color: #005a87;
+}
+
+.bulk-actions button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.bulk-actions-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selected-count {
+    color: #495057;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Submissions Table */
+.submissions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.submissions-table th,
+.submissions-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.submissions-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.submissions-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.submissions-table .check-column {
+    width: 40px;
+    text-align: center;
+}
+
+.submissions-table .column-form {
+    width: 150px;
+}
+
+.submissions-table .column-submission {
+    min-width: 200px;
+}
+
+.submissions-table .column-status {
+    width: 120px;
+}
+
+.submissions-table .column-date {
+    width: 140px;
+}
+
+.submissions-table .column-actions {
+    width: 120px;
+}
+
+/* Status Select */
+.status-select {
+    font-size: 13px;
+    padding: 4px 8px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.status-select:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.25);
+    outline: none;
+}
+
+/* Action Buttons */
+.actions .btn-group {
+    display: flex;
+    gap: 4px;
+}
+
+.actions .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 1;
+    transition: all 0.15s ease-in-out;
+    border: 1px solid;
+}
+
+.actions .btn i {
+    font-size: 12px;
+}
+
+.actions .btn-outline-primary {
+    color: #007cba;
+    border-color: #007cba;
+    background-color: transparent;
+}
+
+.actions .btn-outline-primary:hover {
+    background-color: #007cba;
+    color: #fff;
+}
+
+.actions .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+    background-color: transparent;
+}
+
+.actions .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.actions .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+    background-color: transparent;
+}
+
+.actions .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Submission Preview */
+.submission-preview {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.submission-preview strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.submission-preview .more-fields {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Pagination */
+.submissions-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submissions-pagination .page-numbers {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 2px;
+    color: #007cba;
+    text-decoration: none;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+}
+
+.submissions-pagination .page-numbers:hover {
+    background-color: #f8f9fa;
+    border-color: #007cba;
+}
+
+.submissions-pagination .page-numbers.current {
+    background-color: #007cba;
+    color: #fff;
+    border-color: #007cba;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.25);
+    outline: none;
+}
+
+/* Button Styles */
+.btn {
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007cba;
+    border-color: #007cba;
+}
+
+.btn-primary:hover {
+    background-color: #005a87;
+    border-color: #005a87;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .search-field {
+        min-width: 120px;
+    }
+    
+    .search-field-wide {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .search-field {
+        min-width: auto;
+        flex: none;
+    }
+    
+    .search-actions {
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .submissions-table {
+        font-size: 13px;
+    }
+    
+    .submissions-table th,
+    .submissions-table td {
+        padding: 8px;
+    }
+    
+    .actions .btn {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .submissions-search-container {
+        padding: 15px;
+    }
+    
+    .search-row {
+        gap: 10px;
+    }
+    
+    .btn-search,
+    .btn-clear {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+/* Utility Classes */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}

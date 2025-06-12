@@ -1,0 +1,6 @@
+projectKey=chart-maker-backend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=chart-maker-backend
+ceTaskId=72e9231a-7d65-4765-88e1-6c508a4f0b10
+ceTaskUrl=http://localhost:9000/api/ce/task?id=72e9231a-7d65-4765-88e1-6c508a4f0b10

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aggressively reduce vertical spacing for prose in the editor */
+.prose.ProseMirror > * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.2 !important;
+}
+.prose.ProseMirror h1,
+.prose.ProseMirror h2,
+.prose.ProseMirror h3,
+.prose.ProseMirror h4,
+.prose.ProseMirror h5,
+.prose.ProseMirror h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.2 !important;
+}
+.prose.ProseMirror ul,
+.prose.ProseMirror ol {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 1.5em !important;
+}
+.prose.ProseMirror li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.prose.ProseMirror p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.prose.ProseMirror blockquote {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 1em !important;
+}

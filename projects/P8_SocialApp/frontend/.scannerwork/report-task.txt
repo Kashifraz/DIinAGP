@@ -1,0 +1,6 @@
+projectKey=social_frontend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=social_frontend
+ceTaskId=f3921dc3-962f-43cc-abab-8ed358fe7731
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f3921dc3-962f-43cc-abab-8ed358fe7731

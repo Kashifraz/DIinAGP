@@ -1,0 +1,6 @@
+projectKey=LMS_frontend
+serverUrl=http://localhost:9000
+serverVersion=25.10.0.114319
+dashboardUrl=http://localhost:9000/dashboard?id=LMS_frontend
+ceTaskId=5ef021be-f3f3-4c1f-b99b-00b22d274ad0
+ceTaskUrl=http://localhost:9000/api/ce/task?id=5ef021be-f3f3-4c1f-b99b-00b22d274ad0
