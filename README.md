@@ -4,6 +4,7 @@ It contains:
 - Implementation code for the 10 large-scale projects generated using an AI IDE (e.g., Cursor)
 - Design issue identified by two analysis tools (`CodeScene` and `SonarQube`)
 - Human evaluation screenshots for calculating the functional correctness of the generated projects
+- List of 10 detailed project descriptions for generating projects using Cursor
 
 ## Repository Structure
 
@@ -36,6 +37,8 @@ manual_evaluation/
 design_issues/
 ├── CodeScene/
 └── SonarQube/
+
+Project_Descriptions.pdf
 ```
 ## 1) `projects/`
 
@@ -60,6 +63,10 @@ This folder contains details of design issues identified by two code analysis to
 This folder contains a record of manual human evaluation of the 10 large-scale cursor-generated projects.
 
 - `functional_correctness.xlsx`: master spreadsheet with manual-evaluation records
-- Project folders (`P1_*` ... `P10_*`): containing screenshots of fulfilled functional requirements
+- Project folders (`P1` ... `P10`): containing screenshots of fulfilled functional requirements
+
+## 4) `Project_Descriptions.pdf`
+
+- List of project descriptions for generating large-scale projects
 
 
