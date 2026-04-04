@@ -1,12 +1,12 @@
-This repository is the replication package for our research study, "_Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projects_". 
+# Replication Package for the Paper: *Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projects*
 
-It contains:
+This repository contains:
 - Implementation code for the 10 large-scale projects generated using an AI IDE (e.g., Cursor)
 - Design issue identified by two analysis tools (`CodeScene` and `SonarQube`)
 - Human evaluation screenshots for calculating the functional correctness of the generated projects
 - List of 10 detailed project descriptions for generating projects using Cursor
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 projects/
@@ -40,7 +40,7 @@ design_issues/
 
 Project_Descriptions.pdf
 ```
-## 1) `projects/`
+## 📁 `projects/`
 
 The `projects/` folder stores the implementation artifacts for the 10 large-scale generated systems.
 
@@ -51,22 +51,32 @@ For each main project (`P1` ... `P10`), the expected materials are:
 - `frontend/` (client-side code)
 - `backend/` (server-side code)
 
-## 2) `design_issues/` 
+## 📁 `design_issues/` 
 
 This folder contains details of design issues identified by two code analysis tools:
 
 - `codescene/`: `P1`...`P10` individual `.xlsx` files + `Summary.xlsx`
 - `sonarqube/`: `P1`...`P10` individual `.xlsx` files + `Summary.xlsx` + `Merged_Issues.xlsx` + `Technology_Specific_Issues.xlsx`
 
-## 3) `manual_evaluation/` 
+## 📁 `manual_evaluation/` 
 
 This folder contains a record of manual human evaluation of the 10 large-scale cursor-generated projects.
 
 - `functional_correctness.xlsx`: master spreadsheet with manual-evaluation records
 - Project folders (`P1` ... `P10`): containing screenshots of fulfilled functional requirements
 
-## 4) `Project_Descriptions.pdf`
+## 📁 `Project_Descriptions.pdf`
 
 - List of project descriptions for generating large-scale projects
 
+## 📝 Citation
+
+```bibtex
+@article{LLM4Design,
+  author = {Mohammad Kashif, Syed and Li, Ruiyin and Liang, Peng and Tahir, Amjed and Feng, Qiong, Li, Zengyang and Shahin, Mojtaba},
+  title = {{Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projectsy}},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
+}
+```
 
