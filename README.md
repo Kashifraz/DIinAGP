@@ -1,5 +1,7 @@
 # Replication Package for the Paper: *Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projects*
 
+**DIinAGP** (<ins>D</ins>esign <ins>I</ins>ssues <ins>in</ins> <ins>A</ins>I IDE–<ins>G</ins>enerated Large-Scale <ins>P</ins>rojects)
+
 This repository contains:
 - Implementation code for the 10 large-scale projects generated using an AI IDE (e.g., Cursor)
 - Design issue identified by two analysis tools (`CodeScene` and `SonarQube`)
