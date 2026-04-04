@@ -1,4 +1,4 @@
-This repository is the replication package for our research study, "_Design Issues in AI IDE Generated Large-Scale Projects_". 
+This repository is the replication package for our research study, "_Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projects_". 
 
 It contains:
 - Implementation code for the 10 large-scale projects generated using an AI IDE (e.g., Cursor)
