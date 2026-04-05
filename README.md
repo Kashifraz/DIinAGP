@@ -74,7 +74,7 @@ This folder contains a record of manual human evaluation of the 10 large-scale c
 ## 📝 Citation
 
 ```bibtex
-@article{LLM4Design,
+@article{DIinAGP,
   author = {Mohammad Kashif, Syed and Li, Ruiyin and Liang, Peng and Tahir, Amjed and Feng, Qiong, Li, Zengyang and Shahin, Mojtaba},
   title = {{Beyond Functional Correctness: Design Issues in AI IDE Generated Large-Scale Projectsy}},
   journal={arXiv preprint arXiv:xxxx.xxxxx},
