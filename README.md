@@ -25,8 +25,6 @@ projects/
 ├── pilot-projects/
 └── Project_Descriptions.pdf/
 
-
-
 manual_evaluation/
 ├── P1_CVbuilder/
 ├── P2_VocabularyApp/
