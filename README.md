@@ -22,7 +22,10 @@ projects/
 ├── P8_SocialApp/
 ├── P9_LMS/
 ├── P10_POS/
-└── pilot-projects/
+├── pilot-projects/
+└── Project_Descriptions.pdf/
+
+
 
 manual_evaluation/
 ├── P1_CVbuilder/
@@ -39,12 +42,10 @@ manual_evaluation/
 design_issues/
 ├── CodeScene/
 └── SonarQube/
-
-Project_Descriptions.pdf
 ```
 ## 📁 `projects/`
 
-The `projects/` folder stores the implementation artifacts for the 10 large-scale generated systems.
+The `projects/` folder stores the implementation artifacts for the 10 large-scale generated systems. 
 
 For each main project (`P1` ... `P10`), the expected materials are:
 
@@ -52,6 +53,8 @@ For each main project (`P1` ... `P10`), the expected materials are:
 - `tasklist.md` (testable features including low-level tasks)
 - `frontend/` (client-side code)
 - `backend/` (server-side code)
+
+It also contains `Project_Descriptions.pdf`, which comprises a list of project descriptions for generating large-scale projects.
 
 ## 📁 `design_issues/` 
 
@@ -66,10 +69,6 @@ This folder contains a record of manual human evaluation of the 10 large-scale c
 
 - `functional_correctness.xlsx`: master spreadsheet with manual-evaluation records
 - Project folders (`P1` ... `P10`): containing screenshots of fulfilled functional requirements
-
-## 📁 `Project_Descriptions.pdf`
-
-- List of project descriptions for generating large-scale projects
 
 ## 📝 Citation
 
