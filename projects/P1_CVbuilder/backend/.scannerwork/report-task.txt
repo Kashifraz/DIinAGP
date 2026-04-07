@@ -1,6 +1,0 @@
-projectKey=cv-builder-backend
-serverUrl=http://localhost:9000
-serverVersion=25.10.0.114319
-dashboardUrl=http://localhost:9000/dashboard?id=cv-builder-backend
-ceTaskId=0e874d1d-ba43-4f2b-aef4-fec470b63210
-ceTaskUrl=http://localhost:9000/api/ce/task?id=0e874d1d-ba43-4f2b-aef4-fec470b63210

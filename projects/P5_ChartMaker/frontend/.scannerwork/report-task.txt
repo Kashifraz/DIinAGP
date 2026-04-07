@@ -1,6 +1,0 @@
-projectKey=chark-maker-frontend
-serverUrl=http://localhost:9000
-serverVersion=25.10.0.114319
-dashboardUrl=http://localhost:9000/dashboard?id=chark-maker-frontend
-ceTaskId=d402b0f0-3766-4322-b2d7-15e92e0974e3
-ceTaskUrl=http://localhost:9000/api/ce/task?id=d402b0f0-3766-4322-b2d7-15e92e0974e3
