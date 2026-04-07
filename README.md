@@ -23,7 +23,7 @@ projects/
 ├── P9_LMS/
 ├── P10_POS/
 ├── pilot-projects/
-└── Project_Descriptions.pdf/
+└── Project_Descriptions.pdf
 
 manual_evaluation/
 ├── P1_CVbuilder/
